@@ -83,7 +83,7 @@ if __name__ == "__main__":
         if args.type == "react-app":
             tinker_react_app(args.dest)
 
-        if args.type == "vscoder":
+        if args.type == "vscode":
             tinker_only_formatter(args.dest)
 
     except FileNotFoundError as e:
