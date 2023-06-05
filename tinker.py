@@ -52,7 +52,7 @@ def tinker_react_app(dst_dir):
         print(f"[{CGREEN}ok{CEND}] create {CBEIGE}{x}{CEND} succesfully")
 
 
-def tinker_only_formatter(dst_dir):
+def tinker_vscode(dst_dir):
     """Format a consistent style
 
     Args:
@@ -71,7 +71,7 @@ def tinker_only_formatter(dst_dir):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Simplify coding")
-    parser.add_argument("-t", "--type", help="[reat-app, only-formatter]")
+    parser.add_argument("-t", "--type", help="[reat-app, vscode]", default="vscode")
     parser.add_argument("-d", "--dest", default=os.getcwd(),
                         help="default: current directory")
 
